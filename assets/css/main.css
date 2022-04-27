@@ -55,23 +55,54 @@ header figure img {
 main {
   display: grid;
   grid-template-columns: 1fr;
-  height: 63vh;
 }
 main #mainLeft {
   display: flex;
   flex-direction: column;
-  background-color: green;
   grid-column: 1;
   grid-row: 1;
   padding: 1%;
+  border: 1px solid #000000;
 }
-main #mainLeft #mainLeftTop {
-  background-color: gray;
-  height: 50%;
+main #mainLeft #mainLeftCard {
+  border: 1px solid gray;
 }
-main #mainLeft #mainLeftBottom {
-  background-color: aqua;
-  height: 50%;
+main #mainLeft #mainLeftCard h4 {
+  margin: 0;
+  padding: 1% 2%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+main #mainLeft #mainLeftCard p {
+  margin: 0;
+  padding: 4% 2%;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+main #mainLeft #mainLeftCard h5 {
+  margin: 0;
+  padding: 2% 2%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+}
+main #mainLeft #mainLeftCard figure {
+  margin: 0;
+  padding: 2% 2%;
+}
+main #mainLeft #mainLeftCard figure img {
+  width: 100%;
+}
+main #mainLeft #mainLeftCard .userIcons {
+  padding: 1% 2%;
+}
+main #mainLeft #mainLeftCard .userIcons span {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  padding: 0 5px;
+}
+main #mainLeft #mainLeftCard .userIcons span i {
+  padding: 0 2px;
 }
 main #mainRight {
   background-color: red;

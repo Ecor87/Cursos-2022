@@ -1,21 +1,53 @@
 main{
     display: grid;
     grid-template-columns: 1fr;
-    height: 63vh;
     #mainLeft{
         display: flex;
         flex-direction: column;
-        background-color: green;
         grid-column: 1;
         grid-row: 1;
         padding: 1%;
-        #mainLeftTop{
-            background-color: gray;
-            height: 50%;
-        }
-        #mainLeftBottom{
-            background-color: aqua;
-            height: 50%;
+        border: 1px solid $black;
+        #mainLeftCard{
+            border: 1px solid gray;
+            h4{
+                margin: 0;
+                padding: 1% 2%;
+                font-family: $ubuntu;
+                font-size: $large;
+                font-weight: 700;
+            }
+            p{
+                margin: 0;
+                padding: 4% 2%;
+                font-family: $poppins;
+                font-size: $medium;
+            }
+            h5{
+                margin: 0;
+                padding: 2% 2%;
+                font-family: $ubuntu;
+                font-size: $medium;
+            }
+            figure{
+                margin: 0;
+                padding: 2% 2%;
+                img{
+                    width: 100%;
+                }
+            }
+            .userIcons{
+                padding: 1% 2%;
+                span{
+                    font-family: $ubuntu;
+                    font-size: $medium;
+                    padding: 0 5px;
+                    i{
+                        padding: 0 2px;
+                    }
+                }
+            }
+        
         }
     }
     #mainRight{
@@ -29,4 +61,3 @@ main{
         }
     }
 }
-
