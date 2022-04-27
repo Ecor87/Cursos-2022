@@ -1,0 +1,35 @@
+@media (min-width: 768px) {
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+        .navHamburger{
+            display: none;
+        }
+        /*Navbar Iconos*/
+        .navDesktop{
+            display: inline-block;
+            text-decoration: none;
+            color: #000000;
+            // position: absolute;
+            overflow: hidden;
+            // right: 7%;
+            // top: 2%;    
+        }
+    }
+    header{
+        figure{
+            width: 50%;
+        }
+    }
+    main{
+        grid-template-columns: 1fr 1fr;
+        #mainLeft{
+            grid-column: 1;
+            grid-row: 1;
+        }
+        #mainRight{
+            grid-column: 2;
+            grid-row: 1;
+        }
+    }
+}

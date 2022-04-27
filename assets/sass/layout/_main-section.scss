@@ -1,6 +1,6 @@
 main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     height: 63vh;
     #mainLeft{
         display: flex;
@@ -20,8 +20,8 @@ main{
     }
     #mainRight{
         background-color: red;
-        grid-column: 2;
-        grid-row: 1;
+        grid-column: 1;
+        grid-row: 2;
         padding: 1%;
         #mainRightCourses{
             background-color: pink;
@@ -30,16 +30,3 @@ main{
     }
 }
 
-@media (max-width: 768px) {
-    main{
-        grid-template-columns: 1fr;
-        #mainLeft{
-            grid-column: 1;
-            grid-row: 1;
-        }
-        #mainRight{
-            grid-column: 1;
-            grid-row: 2;
-        }
-    }
-}

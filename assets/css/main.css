@@ -3,18 +3,58 @@
 }
 
 nav {
-  background-color: black;
-  height: 5vh;
+  background-color: #000000;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+}
+nav .navDesktop {
+  display: none;
+}
+nav .navLink {
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+nav .navHamburger {
+  font-size: 32px;
+}
+nav .navHamburger #navHamburgerLinks {
+  display: none;
+  padding: 10px 0px;
+}
+nav .navHamburger a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+nav .navHamburger #hamburgerIcon {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+nav #containerLogoTop img {
+  width: 35px;
 }
 
 header {
-  background-color: yellow;
-  height: 20vh;
+  display: flex;
+  justify-content: center;
+}
+header figure {
+  width: 100%;
+}
+header figure img {
+  width: 100%;
 }
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   height: 63vh;
 }
 main #mainLeft {
@@ -35,8 +75,8 @@ main #mainLeft #mainLeftBottom {
 }
 main #mainRight {
   background-color: red;
-  grid-column: 2;
-  grid-row: 1;
+  grid-column: 1;
+  grid-row: 2;
   padding: 1%;
 }
 main #mainRight #mainRightCourses {
@@ -44,22 +84,42 @@ main #mainRight #mainRightCourses {
   height: 100%;
 }
 
-@media (max-width: 768px) {
+footer {
+  background-color: blue;
+  height: 10vh;
+}
+
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    /*Navbar Iconos*/
+  }
+  nav .navHamburger {
+    display: none;
+  }
+  nav .navDesktop {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    overflow: hidden;
+  }
+
+  header figure {
+    width: 50%;
+  }
+
   main {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   main #mainLeft {
     grid-column: 1;
     grid-row: 1;
   }
   main #mainRight {
-    grid-column: 1;
-    grid-row: 2;
+    grid-column: 2;
+    grid-row: 1;
   }
-}
-footer {
-  background-color: blue;
-  height: 10vh;
 }
 
 /*# sourceMappingURL=main.css.map */
