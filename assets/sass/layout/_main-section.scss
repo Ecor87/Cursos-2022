@@ -1,6 +1,7 @@
 main{
     display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 1%;
     #mainLeft{
         display: flex;
         flex-direction: column;
@@ -51,13 +52,60 @@ main{
         }
     }
     #mainRight{
-        background-color: red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         grid-column: 1;
         grid-row: 2;
-        padding: 1%;
-        #mainRightCourses{
-            background-color: pink;
-            height: 100%;
+        padding: 2%;
+        border: 1px solid $black;
+        #mainRightRound{
+            width: 25%;
+            img{
+                width: 100%;
+                border-radius: 50%;
+                border: 1px solid $black;
+
+            }
         }
+        h4{
+            margin: 0;
+            padding: 1% 2%;
+            font-family: $ubuntu;
+            font-size: $large;
+            font-weight: 700;
+        }
+        i{
+            padding: 0 5px;
+        }
+        h5{
+            width: 100%;
+            text-align: center;
+            background-color: dimgrey;
+            margin: 0;
+            padding: 2% 2%;
+            font-family: $ubuntu;
+            font-size: $medium;
+            color: $white;
+        }
+        ul{
+            list-style-type: circle;
+            align-self: flex-start;
+            font-family: $poppins;
+            a{
+                text-decoration: none;
+            }
+        }
+        .mainRightSocialLinks{
+            color: black;
+        }
+        #mainRightDescription{
+            margin: 0;
+            padding: 4% 2%;
+            font-family: $poppins;
+            font-size: $medium;
+        }
+
+
     }
 }

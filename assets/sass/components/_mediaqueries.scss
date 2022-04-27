@@ -2,18 +2,15 @@
     nav{
         flex-direction: row;
         justify-content: space-between;
+        padding: 1% 2%;
         .navHamburger{
             display: none;
         }
-        /*Navbar Iconos*/
         .navDesktop{
             display: inline-block;
             text-decoration: none;
             color: #000000;
-            // position: absolute;
             overflow: hidden;
-            // right: 7%;
-            // top: 2%;    
         }
     }
     header{
@@ -31,5 +28,28 @@
             grid-column: 2;
             grid-row: 1;
         }
+    }
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 2% 7%;
+        p{
+            flex-grow: 5;
+            margin: 0;
+        }
+        #footerLinks{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-grow: 1;
+
+        }
+        #footerForm{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-grow: 1;
+        }
+    
     }
 }

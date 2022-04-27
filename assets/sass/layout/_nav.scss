@@ -1,5 +1,5 @@
 nav{
-    background-color: $black;
+    background-color: $sable;
     padding: 1%;
     display: flex;
     flex-direction: column;
@@ -30,6 +30,9 @@ nav{
             position: absolute;
             right: 20px;
             top: 15px;
+        }    
+        #hamburgerIcon:hover{
+            color: $orange;
         }    
     }
     #containerLogoTop{

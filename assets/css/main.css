@@ -1,9 +1,17 @@
+@keyframes bracketMove {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 100px;
+  }
+}
 * {
   box-sizing: border-box;
 }
 
 nav {
-  background-color: #000000;
+  background-color: #060606;
   padding: 1%;
   display: flex;
   flex-direction: column;
@@ -37,6 +45,9 @@ nav .navHamburger #hamburgerIcon {
   right: 20px;
   top: 15px;
 }
+nav .navHamburger #hamburgerIcon:hover {
+  color: #ffa500;
+}
 nav #containerLogoTop img {
   width: 35px;
 }
@@ -55,6 +66,7 @@ header figure img {
 main {
   display: grid;
   grid-template-columns: 1fr;
+  grid-gap: 1%;
 }
 main #mainLeft {
   display: flex;
@@ -105,26 +117,112 @@ main #mainLeft #mainLeftCard .userIcons span i {
   padding: 0 2px;
 }
 main #mainRight {
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   grid-column: 1;
   grid-row: 2;
-  padding: 1%;
+  padding: 2%;
+  border: 1px solid #000000;
 }
-main #mainRight #mainRightCourses {
-  background-color: pink;
-  height: 100%;
+main #mainRight #mainRightRound {
+  width: 25%;
+}
+main #mainRight #mainRightRound img {
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+main #mainRight h4 {
+  margin: 0;
+  padding: 1% 2%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+main #mainRight i {
+  padding: 0 5px;
+}
+main #mainRight h5 {
+  width: 100%;
+  text-align: center;
+  background-color: dimgrey;
+  margin: 0;
+  padding: 2% 2%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+}
+main #mainRight ul {
+  list-style-type: circle;
+  align-self: flex-start;
+  font-family: "Poppins", sans-serif;
+}
+main #mainRight ul a {
+  text-decoration: none;
+}
+main #mainRight .mainRightSocialLinks {
+  color: black;
+}
+main #mainRight #mainRightDescription {
+  margin: 0;
+  padding: 4% 2%;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
 }
 
 footer {
-  background-color: blue;
-  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #060606;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  padding: 5%;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer #footerLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer #footerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#footerButton {
+  background-color: #ffaf6d;
+  border: 1px solid #ffffff;
+  color: #000000;
+}
+
+#footerButton:hover {
+  background-color: #ffffff;
+}
+
+#footerInput {
+  border-radius: 3px;
+  border: none;
+  height: 20px;
+  margin: 10px 2px;
+}
+
+#footerInput:focus {
+  background-color: #ffaf6d;
+  outline: none;
 }
 
 @media (min-width: 768px) {
   nav {
     flex-direction: row;
     justify-content: space-between;
-    /*Navbar Iconos*/
+    padding: 1% 2%;
   }
   nav .navHamburger {
     display: none;
@@ -151,6 +249,55 @@ footer {
     grid-column: 2;
     grid-row: 1;
   }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2% 7%;
+  }
+  footer p {
+    flex-grow: 5;
+    margin: 0;
+  }
+  footer #footerLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+  }
+  footer #footerForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+  }
+}
+@keyframes bracketMove {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.svgBrackets {
+  animation: bracketMove 5s linear 0s infinite;
+}
+
+.svgGear {
+  animation: rotate 5s linear 0s infinite;
+  transform-origin: 79.1% 79.1%;
 }
 
 /*# sourceMappingURL=main.css.map */

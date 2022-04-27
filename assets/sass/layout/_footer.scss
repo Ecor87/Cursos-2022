@@ -1,4 +1,24 @@
 footer{
-    background-color: blue;
-    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $sable;
+    color: $white;
+    font-size: $small;
+    font-family: $poppins;
+    padding: 5%;
+    a{
+        color: $white;
+        text-decoration: none;
+    }
+    #footerLinks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #footerForm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
