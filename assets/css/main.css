@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: black;
+  height: 5vh;
+}
+
+header {
+  background-color: yellow;
+  height: 20vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 63vh;
+}
+main #mainLeft {
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  grid-column: 1;
+  grid-row: 1;
+  padding: 1%;
+}
+main #mainLeft #mainLeftTop {
+  background-color: gray;
+  height: 50%;
+}
+main #mainLeft #mainLeftBottom {
+  background-color: aqua;
+  height: 50%;
+}
+main #mainRight {
+  background-color: red;
+  grid-column: 2;
+  grid-row: 1;
+  padding: 1%;
+}
+main #mainRight #mainRightCourses {
+  background-color: pink;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  main #mainLeft {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  main #mainRight {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+footer {
+  background-color: blue;
+  height: 10vh;
+}
+
+/*# sourceMappingURL=main.css.map */
