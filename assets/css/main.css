@@ -10,6 +10,28 @@
   box-sizing: border-box;
 }
 
+h4 {
+  margin: 0;
+  padding: 1% 2%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+  padding: 4% 2%;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+h5 {
+  margin: 0;
+  padding: 2% 2%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+}
+
 nav {
   background-color: #060606;
   padding: 1%;
@@ -68,55 +90,41 @@ main {
   grid-template-columns: 1fr;
   grid-gap: 1%;
 }
-main #mainLeft {
+
+#mainLeft {
   display: flex;
   flex-direction: column;
   grid-column: 1;
   grid-row: 1;
   padding: 1%;
   border: 1px solid #000000;
+  margin-bottom: 1%;
 }
-main #mainLeft #mainLeftCard {
+
+#mainLeftCard {
   border: 1px solid gray;
 }
-main #mainLeft #mainLeftCard h4 {
-  margin: 0;
-  padding: 1% 2%;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-}
-main #mainLeft #mainLeftCard p {
-  margin: 0;
-  padding: 4% 2%;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-}
-main #mainLeft #mainLeftCard h5 {
-  margin: 0;
-  padding: 2% 2%;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 16px;
-}
-main #mainLeft #mainLeftCard figure {
+#mainLeftCard figure {
   margin: 0;
   padding: 2% 2%;
 }
-main #mainLeft #mainLeftCard figure img {
+#mainLeftCard figure img {
   width: 100%;
 }
-main #mainLeft #mainLeftCard .userIcons {
+
+.userIcons {
   padding: 1% 2%;
 }
-main #mainLeft #mainLeftCard .userIcons span {
+.userIcons span {
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   padding: 0 5px;
 }
-main #mainLeft #mainLeftCard .userIcons span i {
+.userIcons span i {
   padding: 0 2px;
 }
-main #mainRight {
+
+#mainRight {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,51 +132,42 @@ main #mainRight {
   grid-row: 2;
   padding: 2%;
   border: 1px solid #000000;
+  margin-bottom: 1%;
 }
-main #mainRight #mainRightRound {
-  width: 25%;
-}
-main #mainRight #mainRightRound img {
-  width: 100%;
-  border-radius: 50%;
-  border: 1px solid #000000;
-}
-main #mainRight h4 {
-  margin: 0;
-  padding: 1% 2%;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-}
-main #mainRight i {
+#mainRight i {
   padding: 0 5px;
 }
-main #mainRight h5 {
+#mainRight h5 {
   width: 100%;
   text-align: center;
   background-color: dimgrey;
-  margin: 0;
-  padding: 2% 2%;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 16px;
   color: #ffffff;
 }
-main #mainRight ul {
+#mainRight ul {
   list-style-type: circle;
   align-self: flex-start;
   font-family: "Poppins", sans-serif;
 }
-main #mainRight ul a {
+#mainRight ul a {
   text-decoration: none;
 }
-main #mainRight .mainRightSocialLinks {
+#mainRight .mainRightSocialLinks {
   color: black;
 }
-main #mainRight #mainRightDescription {
+#mainRight #mainRightDescription {
   margin: 0;
   padding: 4% 2%;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+}
+
+#mainRightRound {
+  width: 25%;
+}
+#mainRightRound img {
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid #000000;
 }
 
 footer {
@@ -223,6 +222,7 @@ footer #footerForm {
     flex-direction: row;
     justify-content: space-between;
     padding: 1% 2%;
+    align-items: center;
   }
   nav .navHamburger {
     display: none;
@@ -253,9 +253,10 @@ footer #footerForm {
   footer {
     flex-direction: row;
     justify-content: space-around;
-    padding: 2% 7%;
+    padding: 1% 7%;
   }
   footer p {
+    padding: 2%;
     flex-grow: 5;
     margin: 0;
   }
